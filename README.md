@@ -1,39 +1,31 @@
 # mathPuzzle
 
-100-level logic math puzzle app (Math Riddles–style). Guest-only play, rewarded ads for hints/answers, contact & tips, BGM/SFX. Default UI language: **English**. **Light + dark** theme supported.
+**mathPuzzle**는 숫자·논리 퍼즐을 단계별로 풀어 가는 모바일 퍼즐 게임입니다. Math Riddles류의 경험을 목표로 하며, 계정 없이 플레이하고 진행은 기기에 저장됩니다.
 
-## Status
+## 주요 기능
 
-| Area | Document | Gate |
-|------|----------|------|
-| Requirements (SSOT) | [docs/PRD.md](docs/PRD.md) v1.2 | Gate 1 — PRD ✅ |
-| Screens & policies | [docs/requirements/](docs/requirements/) | Gate 1 — screen spec draft ✅ |
-| Design | [docs/design/design-option-b-stitch.md](docs/design/design-option-b-stitch.md) | **Option B (Stitch)** ✅ |
-| Stack | [docs/decisions/ADR-0002-brand-stack-theme.md](docs/decisions/ADR-0002-brand-stack-theme.md) | **Flutter** ✅ |
-| Data & integrations | [docs/technical/](docs/technical/) | Contract draft ✅ |
-| Flutter app (slice L1–5) | [app/](app/) | Vertical slice done |
-| Content (100 levels) | [content/levels/](content/levels/) | L1–5 done; L6–100 pending |
-| QA | [docs/qa/](docs/qa/) | Pre-implementation checklist ready |
+- 100개 레벨 (5챕터 × 20)
+- 순차 해금, 정답 제출로 클리어
+- 힌트·정답: 리워드 광고로 해제 (AdMob, 테스트 단위 포함)
+- 후원형 인앱 결제 (팁, 게임플레이 변경 없음)
+- 온보딩·레벨 1 가이드 튜토리얼
+- 라이트 / 다크 테마
 
-## Documentation hub
+UI 언어는 **영어**입니다.
 
-Full index: **[docs/mathPuzzle-docs-hub.md](docs/mathPuzzle-docs-hub.md)**
+## 기술 스택
 
-## Open decisions (blockers for implementation)
+- **Flutter** (`app/`)
+- 퍼즐 데이터: `content/levels/` (JSON)
 
-See [docs/decisions/open-decisions.md](docs/decisions/open-decisions.md) — **O1–O3, O6, O11** decided; **O4, O7, O10** before store.
+## 로컬 실행
 
-Doc consistency: [docs/qa/document-audit.md](docs/qa/document-audit.md)
-
-## Repo layout
-
-```
-content/levels/     # Puzzle JSON + schema
-docs/               # PRD, specs, QA, decisions
-app/                # Flutter app (see app/README.md)
+```powershell
+cd app
+flutter pub get
+flutter run
 ```
 
-## Agent / delivery
+## 문서
 
-- Orchestration: [AGENTS.md](AGENTS.md)
-- Gates: `.cursor/rules/60-delivery-gates.mdc`
+상세 요구사항·설계·QA는 [docs/](docs/) 폴더를 참고하세요. 문서 목록: [docs/mathPuzzle-docs-hub.md](docs/mathPuzzle-docs-hub.md)
