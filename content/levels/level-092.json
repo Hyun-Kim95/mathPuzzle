@@ -1,0 +1,23 @@
+{
+  "id": 92,
+  "title": "Level 92",
+  "type": "operator_pattern",
+  "prompt": "3 + 4 = 7, 4 + 5 = 21, 5 + 6 = ?",
+  "assets": {
+    "image": null,
+    "layout": "equation"
+  },
+  "input": {
+    "mode": "numeric",
+    "min": 0,
+    "max": 999
+  },
+  "answer": 12,
+  "hint": "Try a pattern beyond simple addition.",
+  "explanation": "The answer for this level is 12 (pattern step 92).",
+  "difficulty": "expert",
+  "tags": [
+    "operator_pattern",
+    "expert"
+  ]
+}

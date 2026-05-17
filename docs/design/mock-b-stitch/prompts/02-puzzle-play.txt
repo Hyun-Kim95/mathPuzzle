@@ -1,0 +1,7 @@
+Goal: Single puzzle screen — user finds missing number in a 3x3 grid.
+Header: gradient bar with back arrow, "Level 4", subtitle "Find the missing number".
+Main card: 3x3 number grid; bottom-right cell shows "?" with highlight.
+Large numeric input field, pill primary button "Submit".
+Two secondary pill buttons: "Hint" and "Answer" with small icons.
+Leave space below for optional hint text panel (collapsed).
+Do NOT show hint/answer content unlocked — buttons only.

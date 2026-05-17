@@ -1,0 +1,14 @@
+{
+  "projectId": "4485680357817047125",
+  "title": "mathPuzzle",
+  "stitchUrl": "https://stitch.withgoogle.com/",
+  "screens": {
+    "levelSelect": "41accf566b1f4ebf9558dddb5c57d321",
+    "puzzlePlay": "6ce2c89622e3477da7c26aff6d07c4b2",
+    "levelComplete": "440b6f5c6c2a4fb1bfbfc6ef42d87471",
+    "settings": "b35c39bc6fa54ddf971baf74c742d5b0",
+    "adModal": "8b0a13fdbd9c4845953c34633e29afe8",
+    "splash": "27e45043fed9474d8013510c6a73c689"
+  },
+  "generatedAt": "2026-05-17"
+}

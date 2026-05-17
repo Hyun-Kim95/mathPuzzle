@@ -1,0 +1,9 @@
+{
+  "repositories": [
+    {
+      "slug": "mathPuzzle",
+      "path": "d:\\cursor\\game\\mathPuzzle",
+      "docsPaths": ["docs"]
+    }
+  ]
+}

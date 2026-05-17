@@ -1,0 +1,23 @@
+{
+  "id": 46,
+  "title": "Level 46",
+  "type": "number_grid",
+  "prompt": "6, 9, 12, ? \u2014 What is the next number?",
+  "assets": {
+    "image": null,
+    "layout": "grid_row"
+  },
+  "input": {
+    "mode": "numeric",
+    "min": 0,
+    "max": 999
+  },
+  "answer": 15,
+  "hint": "Find the constant difference between terms.",
+  "explanation": "Each step adds 3: 12 + 3 = 15.",
+  "difficulty": "medium",
+  "tags": [
+    "number_grid",
+    "medium"
+  ]
+}

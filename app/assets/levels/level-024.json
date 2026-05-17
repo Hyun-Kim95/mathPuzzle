@@ -1,0 +1,23 @@
+{
+  "id": 24,
+  "title": "Level 24",
+  "type": "shape_number",
+  "prompt": "Triangle = 10, Square = 8. Triangle + Square = ?",
+  "assets": {
+    "image": null,
+    "layout": "symbols"
+  },
+  "input": {
+    "mode": "numeric",
+    "min": 0,
+    "max": 999
+  },
+  "answer": 18,
+  "hint": "Add the two shape values.",
+  "explanation": "10 + 8 = 18.",
+  "difficulty": "medium",
+  "tags": [
+    "shape_number",
+    "medium"
+  ]
+}

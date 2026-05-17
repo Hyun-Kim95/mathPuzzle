@@ -1,0 +1,23 @@
+{
+  "id": 64,
+  "title": "Level 64",
+  "type": "shape_number",
+  "prompt": "Triangle = 6, Square = 6. Triangle + Square = ?",
+  "assets": {
+    "image": null,
+    "layout": "symbols"
+  },
+  "input": {
+    "mode": "numeric",
+    "min": 0,
+    "max": 999
+  },
+  "answer": 12,
+  "hint": "Add the two shape values.",
+  "explanation": "6 + 6 = 12.",
+  "difficulty": "hard",
+  "tags": [
+    "shape_number",
+    "hard"
+  ]
+}

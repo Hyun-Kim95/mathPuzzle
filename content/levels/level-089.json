@@ -1,0 +1,23 @@
+{
+  "id": 89,
+  "title": "Level 89",
+  "type": "shape_number",
+  "prompt": "Triangle = 14, Square = 10. Triangle + Square = ?",
+  "assets": {
+    "image": null,
+    "layout": "symbols"
+  },
+  "input": {
+    "mode": "numeric",
+    "min": 0,
+    "max": 999
+  },
+  "answer": 24,
+  "hint": "Add the two shape values.",
+  "explanation": "14 + 10 = 24.",
+  "difficulty": "expert",
+  "tags": [
+    "shape_number",
+    "expert"
+  ]
+}

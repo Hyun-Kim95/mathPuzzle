@@ -1,0 +1,299 @@
+﻿{
+  "kind": "generate",
+  "projectId": "4485680357817047125",
+  "count": 1,
+  "messages": [
+    "I've designed the **Grid Puzzle** screen for Mathemagix. \n\n### Design Choices:\n*   **3x3 Grid Layout**: Placed centrally for maximum focus, with a logical number sequence leading to the missing value marked by a glowing cyan question mark.\n*   **Tactile Input**: A custom numeric keypad is positioned at the bottom for quick, thumb-friendly entry, following mobile ergonomics.\n*   **Visual Hierarchy**: Used your \"Mathemagix\" dark theme with high-contrast cyan (#00e5ff) for the primary \"Submit\" action and the target puzzle cell, ensuring the user knows exactly where to look.\n*   **Game State**: Included a progress indicator and level badge (LVL 12) in the header to maintain player momentum.\n\nHow does this grid layout feel to you? I can adjust the number pad or the grid styling if you'd like a different look!"
+  ],
+  "items": [
+    {
+      "id": "6ce2c89622e3477da7c26aff6d07c4b2",
+      "screenId": "6ce2c89622e3477da7c26aff6d07c4b2",
+      "projectId": "4485680357817047125",
+      "title": "Grid Puzzle - Level 12",
+      "htmlUrl": null,
+      "imageUrl": null,
+      "data": {
+        "designSystem": {
+          "designSystem": {
+            "displayName": "Mathemagix",
+            "styleGuidelines": "## Brand & Style\nThe design system is built on the concept of **Logical Playfulness**. It balances the rigor of mathematics with the dopamine-driven engagement of modern gaming. The aesthetic is a fusion of **Minimalism** and **Glassmorphism**, creating an environment that feels like a high-tech \"digital laboratory.\" \n\nThe UI prioritizes focus by eliminating unnecessary decoration, using thin line work and glowing accents to guide the player's eye toward patterns and numerical relationships. The emotional goal is to make the user feel \"brilliant\"?봯roviding a premium, sharp, and rewarding experience that elevates educational content into a sleek, entertainment-first interface.\n\n## Layout & Spacing\nThe layout follows a **Hybrid Grid** model. Main menus and dashboards utilize a 12-column fixed grid centered on the screen to maintain a \"premium app\" feel. The puzzle arena, however, utilizes a fluid, flexible grid that centers the logic elements based on the aspect ratio of the device.\n\nSpacing follows an 8px geometric scale. Tight spacing (4px-12px) is used to group related mathematical symbols and tiles, while generous outer margins (48px+) are used to isolate the puzzle board from the UI chrome, ensuring the player's focus is never compromised.\n\n## Elevation & Depth\nDepth is created through **Glassmorphism** and light emission rather than traditional shadows. \n- **Surface 1 (Background):** Solid Deep Navy.\n- **Surface 2 (Containers):** Semi-transparent Slate (60% opacity) with a 12px backdrop blur and a thin (1px) inner border of 20% white.\n- **Surface 3 (Active Elements):** Same as Surface 2, but with an outer \"glow\" (box-shadow) using the primary color at 30% opacity and 15px spread.\n\nThis creates a \"stacked glass\" effect that feels futuristic and lightweight. High-priority elements \"float\" higher by increasing the backdrop blur intensity and the brightness of the border stroke.\n\n## Components\n- **Puzzle Tiles:** The core interactive unit. These use the glassmorphic style with a 1px Electric Blue border. When selected, the border thickness increases and a subtle primary glow is applied.\n- **Action Buttons:** Primary buttons are solid Electric Blue with white text. Secondary buttons are \"ghost\" style with a 1px Slate border.\n- **Progress Trackers:** Thin horizontal lines. The completed portion glows in Mint Green, while the remaining path is a low-opacity Slate.\n- **Input Fields:** Minimalist underlines or fully enclosed glass containers. On focus, the underline expands from the center using a secondary color.\n- **Reward Toasts:** High-impact overlays using the Sunset Orange or Mint Green colors to celebrate milestones, featuring a semi-transparent background that doesn't fully obscure the puzzle board.\n- **HUD (Heads-Up Display):** Fixed labels in the corners of the screen using the `label-caps` typography to display score, timer, and level stats.",
+            "theme": {
+              "bodyFont": "SORA",
+              "bodyFontFamily": "Sora",
+              "colorMode": "DARK",
+              "colorVariant": "FIDELITY",
+              "customColor": "#00e5ff",
+              "designMd": "---\nname: Mathemagix\ncolors:\n  surface: '#0b1326'\n  surface-dim: '#0b1326'\n  surface-bright: '#31394d'\n  surface-container-lowest: '#060e20'\n  surface-container-low: '#131b2e'\n  surface-container: '#171f33'\n  surface-container-high: '#222a3d'\n  surface-container-highest: '#2d3449'\n  on-surface: '#dae2fd'\n  on-surface-variant: '#bac9cc'\n  inverse-surface: '#dae2fd'\n  inverse-on-surface: '#283044'\n  outline: '#849396'\n  outline-variant: '#3b494c'\n  surface-tint: '#00daf3'\n  primary: '#c3f5ff'\n  on-primary: '#00363d'\n  primary-container: '#00e5ff'\n  on-primary-container: '#00626e'\n  inverse-primary: '#006875'\n  secondary: '#f4fff6'\n  on-secondary: '#003824'\n  secondary-container: '#00feb1'\n  on-secondary-container: '#00714d'\n  tertiary: '#ffe8e1'\n  on-tertiary: '#5d1900'\n  tertiary-container: '#ffc3b0'\n  on-tertiary-container: '#a23200'\n  error: '#ffb4ab'\n  on-error: '#690005'\n  error-container: '#93000a'\n  on-error-container: '#ffdad6'\n  primary-fixed: '#9cf0ff'\n  primary-fixed-dim: '#00daf3'\n  on-primary-fixed: '#001f24'\n  on-primary-fixed-variant: '#004f58'\n  secondary-fixed: '#47ffb8'\n  secondary-fixed-dim: '#00e29d'\n  on-secondary-fixed: '#002113'\n  on-secondary-fixed-variant: '#005236'\n  tertiary-fixed: '#ffdbd0'\n  tertiary-fixed-dim: '#ffb59d'\n  on-tertiary-fixed: '#390c00'\n  on-tertiary-fixed-variant: '#832600'\n  background: '#0b1326'\n  on-background: '#dae2fd'\n  surface-variant: '#2d3449'\ntypography:\n  display-lg:\n    fontFamily: Sora\n    fontSize: 48px\n    fontWeight: '700'\n    lineHeight: 56px\n    letterSpacing: -0.02em\n  display-lg-mobile:\n    fontFamily: Sora\n    fontSize: 32px\n    fontWeight: '700'\n    lineHeight: 40px\n    letterSpacing: -0.02em\n  headline-md:\n    fontFamily: Sora\n    fontSize: 24px\n    fontWeight: '600'\n    lineHeight: 32px\n  body-lg:\n    fontFamily: Sora\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: 28px\n  body-sm:\n    fontFamily: Sora\n    fontSize: 14px\n    fontWeight: '400'\n    lineHeight: 20px\n  label-caps:\n    fontFamily: Sora\n    fontSize: 12px\n    fontWeight: '600'\n    lineHeight: 16px\n    letterSpacing: 0.05em\nrounded:\n  sm: 0.25rem\n  DEFAULT: 0.5rem\n  md: 0.75rem\n  lg: 1rem\n  xl: 1.5rem\n  full: 9999px\nspacing:\n  base: 8px\n  xs: 4px\n  sm: 12px\n  md: 24px\n  lg: 48px\n  xl: 80px\n  gutter: 24px\n  margin-mobile: 16px\n  margin-desktop: 64px\n---\n\n## Brand & Style\nThe design system is built on the concept of **Logical Playfulness**. It balances the rigor of mathematics with the dopamine-driven engagement of modern gaming. The aesthetic is a fusion of **Minimalism** and **Glassmorphism**, creating an environment that feels like a high-tech \"digital laboratory.\" \n\nThe UI prioritizes focus by eliminating unnecessary decoration, using thin line work and glowing accents to guide the player's eye toward patterns and numerical relationships. The emotional goal is to make the user feel \"brilliant\"?봯roviding a premium, sharp, and rewarding experience that elevates educational content into a sleek, entertainment-first interface.\n\n## Colors\nThe color strategy employs a \"Vibrant on Void\" approach. The foundational canvas uses **Deep Navy (#0F172A)** and **Slate (#1E293B)** to provide a restful, high-contrast background that reduces eye strain during long problem-solving sessions.\n\n- **Electric Blue (Primary):** Used for interactive states, primary actions, and the \"active\" logic path.\n- **Mint Green (Secondary):** Reserved for success states, completed patterns, and progress milestones.\n- **Sunset Orange (Tertiary):** Utilized for highlights, warnings, or \"critical\" puzzle elements that require immediate attention.\n- **Neon Accents:** All accent colors are intended to be used with high saturation to simulate a \"glowing\" effect against the dark backdrop.\n\n## Typography\nThis design system utilizes **Sora** for its geometric clarity and technical rhythm. The typeface's wide apertures and distinct character shapes ensure that numbers remain highly legible at all sizes?봞 critical requirement for a math-based game.\n\nHeadlines use a tighter letter-spacing to feel more \"packaged\" and modern, while labels use all-caps with increased tracking to evoke a \"HUD\" (Heads-Up Display) aesthetic. Font weights are kept primarily at 400 and 600 to maintain a clean, rhythmic contrast without adding visual bulk.\n\n## Layout & Spacing\nThe layout follows a **Hybrid Grid** model. Main menus and dashboards utilize a 12-column fixed grid centered on the screen to maintain a \"premium app\" feel. The puzzle arena, however, utilizes a fluid, flexible grid that centers the logic elements based on the aspect ratio of the device.\n\nSpacing follows an 8px geometric scale. Tight spacing (4px-12px) is used to group related mathematical symbols and tiles, while generous outer margins (48px+) are used to isolate the puzzle board from the UI chrome, ensuring the player's focus is never compromised.\n\n## Elevation & Depth\nDepth is created through **Glassmorphism** and light emission rather than traditional shadows. \n- **Surface 1 (Background):** Solid Deep Navy.\n- **Surface 2 (Containers):** Semi-transparent Slate (60% opacity) with a 12px backdrop blur and a thin (1px) inner border of 20% white.\n- **Surface 3 (Active Elements):** Same as Surface 2, but with an outer \"glow\" (box-shadow) using the primary color at 30% opacity and 15px spread.\n\nThis creates a \"stacked glass\" effect that feels futuristic and lightweight. High-priority elements \"float\" higher by increasing the backdrop blur intensity and the brightness of the border stroke.\n\n## Shapes\nThe design system uses **Rounded (level 2)** shapes to strike a balance between friendly engagement and geometric precision. \n- **Standard Elements:** 8px (0.5rem) corner radius for small tiles and input fields.\n- **Containers/Cards:** 16px (1rem) corner radius to create a soft, approachable frame for complex puzzles.\n- **Interaction Feedback:** When a tile is \"slotted\" into place, it may transition from its standard radius to a slightly sharper one to signal a locked, logical fit.\n\n## Components\n- **Puzzle Tiles:** The core interactive unit. These use the glassmorphic style with a 1px Electric Blue border. When selected, the border thickness increases and a subtle primary glow is applied.\n- **Action Buttons:** Primary buttons are solid Electric Blue with white text. Secondary buttons are \"ghost\" style with a 1px Slate border.\n- **Progress Trackers:** Thin horizontal lines. The completed portion glows in Mint Green, while the remaining path is a low-opacity Slate.\n- **Input Fields:** Minimalist underlines or fully enclosed glass containers. On focus, the underline expands from the center using a secondary color.\n- **Reward Toasts:** High-impact overlays using the Sunset Orange or Mint Green colors to celebrate milestones, featuring a semi-transparent background that doesn't fully obscure the puzzle board.\n- **HUD (Heads-Up Display):** Fixed labels in the corners of the screen using the `label-caps` typography to display score, timer, and level stats.",
+              "font": "SORA",
+              "headlineFont": "SORA",
+              "headlineFontFamily": "Sora",
+              "labelFont": "SORA",
+              "labelFontFamily": "Sora",
+              "namedColors": {
+                "background": "#0b1326",
+                "error": "#ffb4ab",
+                "error_container": "#93000a",
+                "inverse_on_surface": "#283044",
+                "inverse_primary": "#006875",
+                "inverse_surface": "#dae2fd",
+                "on_background": "#dae2fd",
+                "on_error": "#690005",
+                "on_error_container": "#ffdad6",
+                "on_primary": "#00363d",
+                "on_primary_container": "#00626e",
+                "on_primary_fixed": "#001f24",
+                "on_primary_fixed_variant": "#004f58",
+                "on_secondary": "#003824",
+                "on_secondary_container": "#00714d",
+                "on_secondary_fixed": "#002113",
+                "on_secondary_fixed_variant": "#005236",
+                "on_surface": "#dae2fd",
+                "on_surface_variant": "#bac9cc",
+                "on_tertiary": "#5d1900",
+                "on_tertiary_container": "#a23200",
+                "on_tertiary_fixed": "#390c00",
+                "on_tertiary_fixed_variant": "#832600",
+                "outline": "#849396",
+                "outline_variant": "#3b494c",
+                "primary": "#c3f5ff",
+                "primary_container": "#00e5ff",
+                "primary_fixed": "#9cf0ff",
+                "primary_fixed_dim": "#00daf3",
+                "secondary": "#f4fff6",
+                "secondary_container": "#00feb1",
+                "secondary_fixed": "#47ffb8",
+                "secondary_fixed_dim": "#00e29d",
+                "surface": "#0b1326",
+                "surface_bright": "#31394d",
+                "surface_container": "#171f33",
+                "surface_container_high": "#222a3d",
+                "surface_container_highest": "#2d3449",
+                "surface_container_low": "#131b2e",
+                "surface_container_lowest": "#060e20",
+                "surface_dim": "#0b1326",
+                "surface_tint": "#00daf3",
+                "surface_variant": "#2d3449",
+                "tertiary": "#ffe8e1",
+                "tertiary_container": "#ffc3b0",
+                "tertiary_fixed": "#ffdbd0",
+                "tertiary_fixed_dim": "#ffb59d"
+              },
+              "overrideNeutralColor": "#0f172a",
+              "overridePrimaryColor": "#00e5ff",
+              "overrideSecondaryColor": "#00ffb2",
+              "overrideTertiaryColor": "#ff6b35",
+              "roundness": "ROUND_EIGHT",
+              "spacing": {
+                "base": "8px",
+                "gutter": "24px",
+                "lg": "48px",
+                "margin-desktop": "64px",
+                "margin-mobile": "16px",
+                "md": "24px",
+                "sm": "12px",
+                "xl": "80px",
+                "xs": "4px"
+              },
+              "spacingScale": 2,
+              "typography": {
+                "body-lg": {
+                  "fontFamily": "Sora",
+                  "fontSize": "18px",
+                  "fontWeight": "400",
+                  "lineHeight": "28px"
+                },
+                "body-sm": {
+                  "fontFamily": "Sora",
+                  "fontSize": "14px",
+                  "fontWeight": "400",
+                  "lineHeight": "20px"
+                },
+                "display-lg": {
+                  "fontFamily": "Sora",
+                  "fontSize": "48px",
+                  "fontWeight": "700",
+                  "letterSpacing": "-0.02em",
+                  "lineHeight": "56px"
+                },
+                "display-lg-mobile": {
+                  "fontFamily": "Sora",
+                  "fontSize": "32px",
+                  "fontWeight": "700",
+                  "letterSpacing": "-0.02em",
+                  "lineHeight": "40px"
+                },
+                "headline-md": {
+                  "fontFamily": "Sora",
+                  "fontSize": "24px",
+                  "fontWeight": "600",
+                  "lineHeight": "32px"
+                },
+                "label-caps": {
+                  "fontFamily": "Sora",
+                  "fontSize": "12px",
+                  "fontWeight": "600",
+                  "letterSpacing": "0.05em",
+                  "lineHeight": "16px"
+                }
+              }
+            }
+          },
+          "name": "assets/4df58118578742e2ad2c66bd183b94c6",
+          "version": "1"
+        },
+        "deviceType": "MOBILE",
+        "generatedBy": "figaro_agent",
+        "height": "1788",
+        "htmlCode": {
+          "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzVhMWIyNzM1NDkyMTQwZDJiN2M3ZDYxMmRkYzMxNmViEgsSBxDDmojUnh8YAZIBIwoKcHJvamVjdF9pZBIVQhM0NDg1NjgwMzU3ODE3MDQ3MTI1&filename=&opi=96797242",
+          "mimeType": "text/html",
+          "name": "projects/4485680357817047125/files/589adcae409844cead9823fe2ba49bcb"
+        },
+        "id": "6ce2c89622e3477da7c26aff6d07c4b2",
+        "name": "projects/4485680357817047125/screens/6ce2c89622e3477da7c26aff6d07c4b2",
+        "prompt": "A 3x3 grid puzzle screen for 'Mathemagix'. \n- Header: Level 12, 'Find the Pattern'.\n- Central 3x3 Grid: Numbers arranged in a logical sequence. One cell contains a glowing '?' in the accent color (#00e5ff). The grid cells have subtle neon borders and a dark glassmorphism effect.\n- Interaction: A numeric keypad (1-9 and 0) at the bottom for entry.\n- Visual Style: Dark mode, futuristic, high-performance tech aesthetic. Use Sora font. Colors: Deep navy background, cyan accents, subtle glow effects.\n- Progress: A small progress bar at the top showing the current level's completion.",
+        "screenMetadata": {
+          "agentType": "PRO_AGENT",
+          "status": "COMPLETE"
+        },
+        "screenType": "DESIGN",
+        "screenshot": {
+          "downloadUrl": "https://lh3.googleusercontent.com/aida/ADBb0uh0RJcfAG87BSKB5RBy6lUC8vezIC_g_9tUx0ouPqO7v5ALjDNtiA-dZdzXWzVoqMuIHtklUV3hp9XvrHWDrFOjOmGMdcopCUZHLl_FCr_cFZP4EyIHtc9TDzBKo3XbshAzeqb2sDcYtBDf4ye64-NP9hI3KTnYVhNJCLuFiVlNTzpK4w8LqhoxUlfEm-v-3iJAXN_MHv6tgTKMLxidJ9z9YtuqyU0BEmo-P4mH-AAEJxyfyJLTM51G8PQ",
+          "name": "projects/4485680357817047125/files/538924d5facd4912ae8bf2c729d512d3"
+        },
+        "theme": {
+          "bodyFont": "SORA",
+          "bodyFontFamily": "Sora",
+          "colorMode": "DARK",
+          "colorVariant": "FIDELITY",
+          "customColor": "#00e5ff",
+          "designMd": "---\nname: Mathemagix\ncolors:\n  surface: '#0b1326'\n  surface-dim: '#0b1326'\n  surface-bright: '#31394d'\n  surface-container-lowest: '#060e20'\n  surface-container-low: '#131b2e'\n  surface-container: '#171f33'\n  surface-container-high: '#222a3d'\n  surface-container-highest: '#2d3449'\n  on-surface: '#dae2fd'\n  on-surface-variant: '#bac9cc'\n  inverse-surface: '#dae2fd'\n  inverse-on-surface: '#283044'\n  outline: '#849396'\n  outline-variant: '#3b494c'\n  surface-tint: '#00daf3'\n  primary: '#c3f5ff'\n  on-primary: '#00363d'\n  primary-container: '#00e5ff'\n  on-primary-container: '#00626e'\n  inverse-primary: '#006875'\n  secondary: '#f4fff6'\n  on-secondary: '#003824'\n  secondary-container: '#00feb1'\n  on-secondary-container: '#00714d'\n  tertiary: '#ffe8e1'\n  on-tertiary: '#5d1900'\n  tertiary-container: '#ffc3b0'\n  on-tertiary-container: '#a23200'\n  error: '#ffb4ab'\n  on-error: '#690005'\n  error-container: '#93000a'\n  on-error-container: '#ffdad6'\n  primary-fixed: '#9cf0ff'\n  primary-fixed-dim: '#00daf3'\n  on-primary-fixed: '#001f24'\n  on-primary-fixed-variant: '#004f58'\n  secondary-fixed: '#47ffb8'\n  secondary-fixed-dim: '#00e29d'\n  on-secondary-fixed: '#002113'\n  on-secondary-fixed-variant: '#005236'\n  tertiary-fixed: '#ffdbd0'\n  tertiary-fixed-dim: '#ffb59d'\n  on-tertiary-fixed: '#390c00'\n  on-tertiary-fixed-variant: '#832600'\n  background: '#0b1326'\n  on-background: '#dae2fd'\n  surface-variant: '#2d3449'\ntypography:\n  display-lg:\n    fontFamily: Sora\n    fontSize: 48px\n    fontWeight: '700'\n    lineHeight: 56px\n    letterSpacing: -0.02em\n  display-lg-mobile:\n    fontFamily: Sora\n    fontSize: 32px\n    fontWeight: '700'\n    lineHeight: 40px\n    letterSpacing: -0.02em\n  headline-md:\n    fontFamily: Sora\n    fontSize: 24px\n    fontWeight: '600'\n    lineHeight: 32px\n  body-lg:\n    fontFamily: Sora\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: 28px\n  body-sm:\n    fontFamily: Sora\n    fontSize: 14px\n    fontWeight: '400'\n    lineHeight: 20px\n  label-caps:\n    fontFamily: Sora\n    fontSize: 12px\n    fontWeight: '600'\n    lineHeight: 16px\n    letterSpacing: 0.05em\nrounded:\n  sm: 0.25rem\n  DEFAULT: 0.5rem\n  md: 0.75rem\n  lg: 1rem\n  xl: 1.5rem\n  full: 9999px\nspacing:\n  base: 8px\n  xs: 4px\n  sm: 12px\n  md: 24px\n  lg: 48px\n  xl: 80px\n  gutter: 24px\n  margin-mobile: 16px\n  margin-desktop: 64px\n---\n\n## Brand & Style\nThe design system is built on the concept of **Logical Playfulness**. It balances the rigor of mathematics with the dopamine-driven engagement of modern gaming. The aesthetic is a fusion of **Minimalism** and **Glassmorphism**, creating an environment that feels like a high-tech \"digital laboratory.\" \n\nThe UI prioritizes focus by eliminating unnecessary decoration, using thin line work and glowing accents to guide the player's eye toward patterns and numerical relationships. The emotional goal is to make the user feel \"brilliant\"?봯roviding a premium, sharp, and rewarding experience that elevates educational content into a sleek, entertainment-first interface.\n\n## Colors\nThe color strategy employs a \"Vibrant on Void\" approach. The foundational canvas uses **Deep Navy (#0F172A)** and **Slate (#1E293B)** to provide a restful, high-contrast background that reduces eye strain during long problem-solving sessions.\n\n- **Electric Blue (Primary):** Used for interactive states, primary actions, and the \"active\" logic path.\n- **Mint Green (Secondary):** Reserved for success states, completed patterns, and progress milestones.\n- **Sunset Orange (Tertiary):** Utilized for highlights, warnings, or \"critical\" puzzle elements that require immediate attention.\n- **Neon Accents:** All accent colors are intended to be used with high saturation to simulate a \"glowing\" effect against the dark backdrop.\n\n## Typography\nThis design system utilizes **Sora** for its geometric clarity and technical rhythm. The typeface's wide apertures and distinct character shapes ensure that numbers remain highly legible at all sizes?봞 critical requirement for a math-based game.\n\nHeadlines use a tighter letter-spacing to feel more \"packaged\" and modern, while labels use all-caps with increased tracking to evoke a \"HUD\" (Heads-Up Display) aesthetic. Font weights are kept primarily at 400 and 600 to maintain a clean, rhythmic contrast without adding visual bulk.\n\n## Layout & Spacing\nThe layout follows a **Hybrid Grid** model. Main menus and dashboards utilize a 12-column fixed grid centered on the screen to maintain a \"premium app\" feel. The puzzle arena, however, utilizes a fluid, flexible grid that centers the logic elements based on the aspect ratio of the device.\n\nSpacing follows an 8px geometric scale. Tight spacing (4px-12px) is used to group related mathematical symbols and tiles, while generous outer margins (48px+) are used to isolate the puzzle board from the UI chrome, ensuring the player's focus is never compromised.\n\n## Elevation & Depth\nDepth is created through **Glassmorphism** and light emission rather than traditional shadows. \n- **Surface 1 (Background):** Solid Deep Navy.\n- **Surface 2 (Containers):** Semi-transparent Slate (60% opacity) with a 12px backdrop blur and a thin (1px) inner border of 20% white.\n- **Surface 3 (Active Elements):** Same as Surface 2, but with an outer \"glow\" (box-shadow) using the primary color at 30% opacity and 15px spread.\n\nThis creates a \"stacked glass\" effect that feels futuristic and lightweight. High-priority elements \"float\" higher by increasing the backdrop blur intensity and the brightness of the border stroke.\n\n## Shapes\nThe design system uses **Rounded (level 2)** shapes to strike a balance between friendly engagement and geometric precision. \n- **Standard Elements:** 8px (0.5rem) corner radius for small tiles and input fields.\n- **Containers/Cards:** 16px (1rem) corner radius to create a soft, approachable frame for complex puzzles.\n- **Interaction Feedback:** When a tile is \"slotted\" into place, it may transition from its standard radius to a slightly sharper one to signal a locked, logical fit.\n\n## Components\n- **Puzzle Tiles:** The core interactive unit. These use the glassmorphic style with a 1px Electric Blue border. When selected, the border thickness increases and a subtle primary glow is applied.\n- **Action Buttons:** Primary buttons are solid Electric Blue with white text. Secondary buttons are \"ghost\" style with a 1px Slate border.\n- **Progress Trackers:** Thin horizontal lines. The completed portion glows in Mint Green, while the remaining path is a low-opacity Slate.\n- **Input Fields:** Minimalist underlines or fully enclosed glass containers. On focus, the underline expands from the center using a secondary color.\n- **Reward Toasts:** High-impact overlays using the Sunset Orange or Mint Green colors to celebrate milestones, featuring a semi-transparent background that doesn't fully obscure the puzzle board.\n- **HUD (Heads-Up Display):** Fixed labels in the corners of the screen using the `label-caps` typography to display score, timer, and level stats.",
+          "font": "SORA",
+          "headlineFont": "SORA",
+          "headlineFontFamily": "Sora",
+          "labelFont": "SORA",
+          "labelFontFamily": "Sora",
+          "namedColors": {
+            "background": "#0b1326",
+            "error": "#ffb4ab",
+            "error_container": "#93000a",
+            "inverse_on_surface": "#283044",
+            "inverse_primary": "#006875",
+            "inverse_surface": "#dae2fd",
+            "on_background": "#dae2fd",
+            "on_error": "#690005",
+            "on_error_container": "#ffdad6",
+            "on_primary": "#00363d",
+            "on_primary_container": "#00626e",
+            "on_primary_fixed": "#001f24",
+            "on_primary_fixed_variant": "#004f58",
+            "on_secondary": "#003824",
+            "on_secondary_container": "#00714d",
+            "on_secondary_fixed": "#002113",
+            "on_secondary_fixed_variant": "#005236",
+            "on_surface": "#dae2fd",
+            "on_surface_variant": "#bac9cc",
+            "on_tertiary": "#5d1900",
+            "on_tertiary_container": "#a23200",
+            "on_tertiary_fixed": "#390c00",
+            "on_tertiary_fixed_variant": "#832600",
+            "outline": "#849396",
+            "outline_variant": "#3b494c",
+            "primary": "#c3f5ff",
+            "primary_container": "#00e5ff",
+            "primary_fixed": "#9cf0ff",
+            "primary_fixed_dim": "#00daf3",
+            "secondary": "#f4fff6",
+            "secondary_container": "#00feb1",
+            "secondary_fixed": "#47ffb8",
+            "secondary_fixed_dim": "#00e29d",
+            "surface": "#0b1326",
+            "surface_bright": "#31394d",
+            "surface_container": "#171f33",
+            "surface_container_high": "#222a3d",
+            "surface_container_highest": "#2d3449",
+            "surface_container_low": "#131b2e",
+            "surface_container_lowest": "#060e20",
+            "surface_dim": "#0b1326",
+            "surface_tint": "#00daf3",
+            "surface_variant": "#2d3449",
+            "tertiary": "#ffe8e1",
+            "tertiary_container": "#ffc3b0",
+            "tertiary_fixed": "#ffdbd0",
+            "tertiary_fixed_dim": "#ffb59d"
+          },
+          "overrideNeutralColor": "#0f172a",
+          "overridePrimaryColor": "#00e5ff",
+          "overrideSecondaryColor": "#00ffb2",
+          "overrideTertiaryColor": "#ff6b35",
+          "roundness": "ROUND_EIGHT",
+          "spacing": {
+            "base": "8px",
+            "gutter": "24px",
+            "lg": "48px",
+            "margin-desktop": "64px",
+            "margin-mobile": "16px",
+            "md": "24px",
+            "sm": "12px",
+            "xl": "80px",
+            "xs": "4px"
+          },
+          "spacingScale": 2,
+          "typography": {
+            "body-lg": {
+              "fontFamily": "Sora",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "28px"
+            },
+            "body-sm": {
+              "fontFamily": "Sora",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "20px"
+            },
+            "display-lg": {
+              "fontFamily": "Sora",
+              "fontSize": "48px",
+              "fontWeight": "700",
+              "letterSpacing": "-0.02em",
+              "lineHeight": "56px"
+            },
+            "display-lg-mobile": {
+              "fontFamily": "Sora",
+              "fontSize": "32px",
+              "fontWeight": "700",
+              "letterSpacing": "-0.02em",
+              "lineHeight": "40px"
+            },
+            "headline-md": {
+              "fontFamily": "Sora",
+              "fontSize": "24px",
+              "fontWeight": "600",
+              "lineHeight": "32px"
+            },
+            "label-caps": {
+              "fontFamily": "Sora",
+              "fontSize": "12px",
+              "fontWeight": "600",
+              "letterSpacing": "0.05em",
+              "lineHeight": "16px"
+            }
+          }
+        },
+        "title": "Grid Puzzle - Level 12",
+        "width": "780",
+        "projectId": "4485680357817047125"
+      },
+      "resultIndex": 1
+    }
+  ],
+  "notes": [],
+  "followUp": {
+    "screenIds": [
+      "6ce2c89622e3477da7c26aff6d07c4b2"
+    ],
+    "getCommand": "stitch screen get --project-id 4485680357817047125 --screen-id 6ce2c89622e3477da7c26aff6d07c4b2 --include-html --include-image --json"
+  }
+}

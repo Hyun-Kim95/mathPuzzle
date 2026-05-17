@@ -1,0 +1,23 @@
+{
+  "id": 35,
+  "title": "Level 35",
+  "type": "visual_equation",
+  "prompt": "If \u25b3 + \u25b3 = 4 and \u25b3 + \u25a1 = 8, what is \u25a1?",
+  "assets": {
+    "image": null,
+    "layout": "symbols"
+  },
+  "input": {
+    "mode": "numeric",
+    "min": 0,
+    "max": 999
+  },
+  "answer": 6,
+  "hint": "Find the triangle value first.",
+  "explanation": "\u25b3 = 2, so \u25a1 = 6.",
+  "difficulty": "medium",
+  "tags": [
+    "visual_equation",
+    "medium"
+  ]
+}

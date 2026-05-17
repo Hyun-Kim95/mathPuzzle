@@ -1,0 +1,20 @@
+name: Validate levels
+
+on:
+  push:
+    paths:
+      - 'content/levels/**'
+      - 'scripts/validate-levels.ps1'
+      - 'scripts/generate-levels.py'
+  pull_request:
+    paths:
+      - 'content/levels/**'
+
+jobs:
+  validate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate level JSON
+        shell: pwsh
+        run: ./scripts/validate-levels.ps1

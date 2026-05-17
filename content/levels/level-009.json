@@ -1,0 +1,23 @@
+{
+  "id": 9,
+  "title": "Level 9",
+  "type": "shape_number",
+  "prompt": "Triangle = 8, Square = 7. Triangle + Square = ?",
+  "assets": {
+    "image": null,
+    "layout": "symbols"
+  },
+  "input": {
+    "mode": "numeric",
+    "min": 0,
+    "max": 999
+  },
+  "answer": 15,
+  "hint": "Add the two shape values.",
+  "explanation": "8 + 7 = 15.",
+  "difficulty": "easy",
+  "tags": [
+    "shape_number",
+    "easy"
+  ]
+}

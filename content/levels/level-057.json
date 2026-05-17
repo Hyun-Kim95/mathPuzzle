@@ -1,0 +1,23 @@
+{
+  "id": 57,
+  "title": "Level 57",
+  "type": "operator_pattern",
+  "prompt": "3 + 4 = 7, 4 + 5 = 21, 5 + 6 = ?",
+  "assets": {
+    "image": null,
+    "layout": "equation"
+  },
+  "input": {
+    "mode": "numeric",
+    "min": 0,
+    "max": 999
+  },
+  "answer": 13,
+  "hint": "Try a pattern beyond simple addition.",
+  "explanation": "The answer for this level is 13 (pattern step 57).",
+  "difficulty": "hard",
+  "tags": [
+    "operator_pattern",
+    "hard"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "displayName": "mathPuzzle — Playful Logic",
+  "theme": {
+    "colorMode": "LIGHT",
+    "headlineFont": "SPACE_GROTESK",
+    "bodyFont": "INTER",
+    "roundness": "ROUND_FULL",
+    "customColor": {
+      "primary": "#7C3AED",
+      "secondary": "#06B6D4",
+      "background": "#FFF8F0",
+      "surface": "#FFFFFF"
+    }
+  },
+  "notes": "Brand: mathPuzzle. v1 requires light+dark in Flutter (see design-tokens-v0 dark column). Optional Stitch dark pass: colorMode DARK, background #0F172A."
+}

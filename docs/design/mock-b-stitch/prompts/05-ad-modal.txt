@@ -1,0 +1,5 @@
+Goal: Modal overlay before rewarded video to unlock hint.
+Dimmed full-screen overlay; centered card with film/play icon.
+Title "Unlock hint", body "Watch a short video to continue."
+Primary pill "Watch video", secondary text button "Not now".
+Friendly, trustworthy, not dark-pattern.

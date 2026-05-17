@@ -1,0 +1,23 @@
+{
+  "id": 31,
+  "title": "Level 31",
+  "type": "number_grid",
+  "prompt": "5, 8, 11, ? \u2014 What is the next number?",
+  "assets": {
+    "image": null,
+    "layout": "grid_row"
+  },
+  "input": {
+    "mode": "numeric",
+    "min": 0,
+    "max": 999
+  },
+  "answer": 14,
+  "hint": "Find the constant difference between terms.",
+  "explanation": "Each step adds 3: 11 + 3 = 14.",
+  "difficulty": "medium",
+  "tags": [
+    "number_grid",
+    "medium"
+  ]
+}

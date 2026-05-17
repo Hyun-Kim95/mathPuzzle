@@ -1,0 +1,4 @@
+Goal: App launch splash screen.
+Center: abstract math symbol (sigma or puzzle motif) on gradient circle.
+App name "mathPuzzle", tagline "Find the rule. Fill the blank."
+Minimal, fast-read brand moment; no buttons.

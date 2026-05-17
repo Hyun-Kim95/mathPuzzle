@@ -1,0 +1,23 @@
+{
+  "id": 47,
+  "title": "Level 47",
+  "type": "operator_pattern",
+  "prompt": "7 + 8 = 15, 8 + 9 = 105, 9 + 10 = ?",
+  "assets": {
+    "image": null,
+    "layout": "equation"
+  },
+  "input": {
+    "mode": "numeric",
+    "min": 0,
+    "max": 999
+  },
+  "answer": 12,
+  "hint": "Try a pattern beyond simple addition.",
+  "explanation": "The answer for this level is 12 (pattern step 47).",
+  "difficulty": "medium",
+  "tags": [
+    "operator_pattern",
+    "medium"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": 1,
+  "title": "Level 1",
+  "type": "number_grid",
+  "prompt": "Find the missing number.",
+  "assets": { "image": null, "layout": "grid_3x3" },
+  "input": { "mode": "numeric", "min": 0, "max": 99 },
+  "answer": 6,
+  "hint": "Look at the sum of each row.",
+  "explanation": "Each row sums to 15, so ? = 6.",
+  "difficulty": "easy",
+  "tags": ["addition"]
+}

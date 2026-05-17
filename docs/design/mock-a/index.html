@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Math Pattern Puzzle — Design A</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="toolbar">
+    <label for="screenSelect">Screen</label>
+    <select id="screenSelect">
+      <option value="splash">S01 Splash</option>
+      <option value="levels">S04 Levels</option>
+      <option value="puzzle">S05 Puzzle</option>
+      <option value="complete">S06 Complete</option>
+      <option value="settings">S08 Settings</option>
+    </select>
+    <label><input type="checkbox" id="darkToggle" /> Dark</label>
+    <button type="button" id="showAdModal">Ad modal</button>
+    <button type="button" id="showHint">Hint panel</button>
+  </div>
+
+  <div class="phone" id="phone" data-theme="light">
+    <div class="status-bar"><span>9:41</span><span>|||</span></div>
+
+    <section class="screen splash active" data-screen="splash">
+      <div class="splash">
+        <div class="logo">&#8721;</div>
+        <h1>Math Pattern Puzzle</h1>
+        <p>Find the rule. Fill the blank.</p>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="levels">
+      <header class="header">
+        <h1>Levels</h1>
+        <button type="button" class="icon-btn" data-goto="settings">&#9881;</button>
+      </header>
+      <p class="progress-line">Progress: 3 / 100</p>
+      <div class="level-grid" id="levelGrid"></div>
+      <div class="banner-placeholder">Banner ad (optional)</div>
+    </section>
+
+    <section class="screen" data-screen="puzzle">
+      <header class="header">
+        <button type="button" class="icon-btn" data-goto="levels">&larr;</button>
+        <h1>Level 3</h1>
+      </header>
+      <div class="card">
+        <p class="puzzle-prompt">Find the missing number.</p>
+        <div class="puzzle-grid">
+          <span>8</span><span>1</span><span>6</span>
+          <span>3</span><span>5</span><span>7</span>
+          <span>4</span><span>9</span><span class="q">?</span>
+        </div>
+        <input type="number" placeholder="Your answer" />
+        <button type="button" class="btn btn-primary">Submit</button>
+        <div class="row-2">
+          <button type="button" class="btn btn-secondary">Hint</button>
+          <button type="button" class="btn btn-secondary">Show answer</button>
+        </div>
+        <div class="hint-panel" id="hintPanel" hidden>
+          <strong>Hint:</strong> Look at the sum of each row.
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="complete">
+      <header class="header"><h1>Level 3</h1></header>
+      <div class="card complete-card">
+        <p class="complete-icon">&#10003; &#9733;</p>
+        <h2>Correct!</h2>
+        <p class="muted">Perfect solve — no hints used.</p>
+        <button type="button" class="btn btn-primary" data-goto="puzzle">Next level</button>
+        <button type="button" class="btn btn-ghost" data-goto="levels">Back to levels</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="settings">
+      <header class="header">
+        <button type="button" class="icon-btn" data-goto="levels">&larr;</button>
+        <h1>Settings</h1>
+      </header>
+      <div class="settings-list">
+        <div class="settings-row"><span>Mute all</span><span class="toggle"></span></div>
+        <div class="settings-row"><span>Music</span><span class="toggle on"></span></div>
+        <div class="settings-row"><span>Sound effects</span><span class="toggle on"></span></div>
+        <div class="settings-row"><span>Contact us</span><span class="chev">&rsaquo;</span></div>
+        <div class="settings-row"><span>Support the developer</span><span class="chev">&rsaquo;</span></div>
+        <div class="settings-row"><span>Privacy policy</span><span class="chev">&rsaquo;</span></div>
+        <div class="settings-row"><span>Terms of use</span><span class="chev">&rsaquo;</span></div>
+        <div class="settings-row"><span>About</span><span class="chev">&rsaquo;</span></div>
+        <div class="settings-row danger"><span>Reset progress</span><span class="chev">&rsaquo;</span></div>
+      </div>
+    </section>
+
+    <div class="modal-overlay" id="adModal">
+      <div class="modal">
+        <h2>Watch a short video</h2>
+        <p>Unlock hint for this level.</p>
+        <button type="button" class="btn btn-primary">Watch</button>
+        <button type="button" class="btn btn-ghost" id="closeAd">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <p class="caption"><strong>Option A</strong> (Minimal Logic) — open in browser</p>
+
+  <script src="app.js"></script>
+</body>
+</html>

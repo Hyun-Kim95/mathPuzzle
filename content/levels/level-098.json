@@ -1,0 +1,23 @@
+{
+  "id": 98,
+  "title": "Level 98",
+  "type": "missing_term",
+  "prompt": "2, 3, 5, 8, 12, ?",
+  "assets": {
+    "image": null,
+    "layout": "sequence"
+  },
+  "input": {
+    "mode": "numeric",
+    "min": 0,
+    "max": 999
+  },
+  "answer": 17,
+  "hint": "Each term may depend on previous terms.",
+  "explanation": "The next term is 17.",
+  "difficulty": "expert",
+  "tags": [
+    "missing_term",
+    "expert"
+  ]
+}

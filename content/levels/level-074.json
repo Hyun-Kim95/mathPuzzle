@@ -1,0 +1,23 @@
+{
+  "id": 74,
+  "title": "Level 74",
+  "type": "shape_number",
+  "prompt": "Triangle = 12, Square = 9. Triangle + Square = ?",
+  "assets": {
+    "image": null,
+    "layout": "symbols"
+  },
+  "input": {
+    "mode": "numeric",
+    "min": 0,
+    "max": 999
+  },
+  "answer": 21,
+  "hint": "Add the two shape values.",
+  "explanation": "12 + 9 = 21.",
+  "difficulty": "hard",
+  "tags": [
+    "shape_number",
+    "hard"
+  ]
+}

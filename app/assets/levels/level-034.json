@@ -1,0 +1,23 @@
+{
+  "id": 34,
+  "title": "Level 34",
+  "type": "shape_number",
+  "prompt": "Triangle = 16, Square = 11. Triangle + Square = ?",
+  "assets": {
+    "image": null,
+    "layout": "symbols"
+  },
+  "input": {
+    "mode": "numeric",
+    "min": 0,
+    "max": 999
+  },
+  "answer": 27,
+  "hint": "Add the two shape values.",
+  "explanation": "16 + 11 = 27.",
+  "difficulty": "medium",
+  "tags": [
+    "shape_number",
+    "medium"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "projectId": "REPLACE_AFTER_stitch_project_create",
+  "title": "Math Pattern Puzzle",
+  "screens": {
+    "levelSelect": "",
+    "puzzlePlay": "",
+    "levelComplete": "",
+    "settings": "",
+    "adModal": "",
+    "splash": ""
+  }
+}

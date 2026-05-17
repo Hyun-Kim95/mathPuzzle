@@ -1,0 +1,68 @@
+# --- Secrets & local config ---
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+**/key.properties
+**/*.keystore
+**/*.jks
+secrets/
+credentials.json
+**/google-services.json
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- IDEs & editor ---
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+.cursor/
+
+# --- Python (scripts/generate-levels.py) ---
+__pycache__/
+*.py[cod]
+.Python
+.venv/
+venv/
+.pytest_cache/
+
+# --- Flutter / Dart (monorepo; app/.gitignore also applies) ---
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.pub-cache/
+**/.pub/
+**/build/
+**/coverage/
+*.apk
+*.aab
+*.ipa
+*.symbols
+*.map.json
+
+# --- Android Gradle caches ---
+**/.gradle/
+**/android/.cxx/
+**/android/**/captures/
+**/android/**/local.properties
+**/android/.kotlin/
+
+# --- Node (optional local tooling) ---
+node_modules/
+
+# --- Logs & temp ---
+*.log
+*.tmp
+*.temp
+.cache/
+
+# --- Local agent / plan artifacts ---
+*.plan.md

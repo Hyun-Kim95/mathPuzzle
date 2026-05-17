@@ -1,0 +1,23 @@
+{
+  "id": 18,
+  "title": "Level 18",
+  "type": "missing_term",
+  "prompt": "6, 7, 9, 12, 16, ?",
+  "assets": {
+    "image": null,
+    "layout": "sequence"
+  },
+  "input": {
+    "mode": "numeric",
+    "min": 0,
+    "max": 999
+  },
+  "answer": 21,
+  "hint": "Each term may depend on previous terms.",
+  "explanation": "The next term is 21.",
+  "difficulty": "easy",
+  "tags": [
+    "missing_term",
+    "easy"
+  ]
+}

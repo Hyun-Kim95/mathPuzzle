@@ -1,0 +1,23 @@
+{
+  "id": 55,
+  "title": "Level 55",
+  "type": "visual_equation",
+  "prompt": "If \u25b3 + \u25b3 = 16 and \u25b3 + \u25a1 = 20, what is \u25a1?",
+  "assets": {
+    "image": null,
+    "layout": "symbols"
+  },
+  "input": {
+    "mode": "numeric",
+    "min": 0,
+    "max": 999
+  },
+  "answer": 12,
+  "hint": "Find the triangle value first.",
+  "explanation": "\u25b3 = 8, so \u25a1 = 12.",
+  "difficulty": "hard",
+  "tags": [
+    "visual_equation",
+    "hard"
+  ]
+}

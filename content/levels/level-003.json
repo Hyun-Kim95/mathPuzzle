@@ -1,0 +1,23 @@
+{
+  "id": 3,
+  "title": "Level 3",
+  "type": "missing_term",
+  "prompt": "1, 1, 2, 3, 5, ?",
+  "assets": {
+    "image": null,
+    "layout": "sequence"
+  },
+  "input": {
+    "mode": "numeric",
+    "min": 0,
+    "max": 999
+  },
+  "answer": 8,
+  "hint": "Each term may depend on previous terms.",
+  "explanation": "The next term is 8.",
+  "difficulty": "easy",
+  "tags": [
+    "missing_term",
+    "easy"
+  ]
+}

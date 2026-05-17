@@ -1,0 +1,23 @@
+{
+  "id": 38,
+  "title": "Level 38",
+  "type": "missing_term",
+  "prompt": "5, 6, 8, 11, 15, ?",
+  "assets": {
+    "image": null,
+    "layout": "sequence"
+  },
+  "input": {
+    "mode": "numeric",
+    "min": 0,
+    "max": 999
+  },
+  "answer": 20,
+  "hint": "Each term may depend on previous terms.",
+  "explanation": "The next term is 20.",
+  "difficulty": "medium",
+  "tags": [
+    "missing_term",
+    "medium"
+  ]
+}

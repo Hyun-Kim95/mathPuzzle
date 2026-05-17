@@ -1,0 +1,23 @@
+{
+  "id": 93,
+  "title": "Level 93",
+  "type": "missing_term",
+  "prompt": "4, 5, 7, 10, 14, ?",
+  "assets": {
+    "image": null,
+    "layout": "sequence"
+  },
+  "input": {
+    "mode": "numeric",
+    "min": 0,
+    "max": 999
+  },
+  "answer": 19,
+  "hint": "Each term may depend on previous terms.",
+  "explanation": "The next term is 19.",
+  "difficulty": "expert",
+  "tags": [
+    "missing_term",
+    "expert"
+  ]
+}

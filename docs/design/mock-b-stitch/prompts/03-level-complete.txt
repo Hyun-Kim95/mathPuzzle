@@ -1,0 +1,4 @@
+Goal: Success screen after correct answer.
+Center: celebration emoji or confetti accent, headline "Level cleared!", subtext "Perfect solve — no hints used" with star icon.
+Primary pill CTA "Next level", secondary "Back to levels".
+Uplifting, consistent with puzzle screen gradients.

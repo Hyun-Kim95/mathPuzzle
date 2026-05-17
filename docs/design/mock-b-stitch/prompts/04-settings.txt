@@ -1,0 +1,4 @@
+Goal: Settings for offline puzzle game.
+Header: simple back + title "Settings".
+List rows: Mute all (toggle), Music (toggle on), Sound effects (toggle on), Contact us (chevron), Support the developer (chevron), Privacy policy, Terms of use, About, Reset progress (destructive red text).
+iOS-style grouped list on light surface; header may use subtle gradient.

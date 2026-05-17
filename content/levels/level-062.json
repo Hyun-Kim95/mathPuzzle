@@ -1,0 +1,23 @@
+{
+  "id": 62,
+  "title": "Level 62",
+  "type": "operator_pattern",
+  "prompt": "8 + 9 = 17, 9 + 10 = 136, 10 + 11 = ?",
+  "assets": {
+    "image": null,
+    "layout": "equation"
+  },
+  "input": {
+    "mode": "numeric",
+    "min": 0,
+    "max": 999
+  },
+  "answer": 18,
+  "hint": "Try a pattern beyond simple addition.",
+  "explanation": "The answer for this level is 18 (pattern step 62).",
+  "difficulty": "hard",
+  "tags": [
+    "operator_pattern",
+    "hard"
+  ]
+}

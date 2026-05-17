@@ -1,0 +1,11 @@
+
+DESIGN SYSTEM (apply to all screens — Option B Playful Gradient):
+- App display name: mathPuzzle (never Mathemagix or other placeholders).
+- Platform: Mobile portrait 390x844, English UI labels.
+- Palette: Primary violet #7C3AED, accent cyan #06B6D4, background warm off-white #FFF8F0, surface #FFFFFF, text #1F2937.
+- Typography: Space Grotesk headlines, Inter body; friendly, game-like but readable.
+- Components: Full pill buttons for primary CTA; rounded 16–20px cards; soft shadows.
+- Level map: Chapter sections with chip buttons (done=green, perfect=gold star, locked=gray).
+- Accessibility: 44pt minimum touch targets, WCAG AA contrast on text.
+- Dark mode: app ships light+dark; reference screens may be light-first. Dark tokens: background #0F172A, surface #1E293B.
+- No login UI. Minimal clutter. Rewarded-ad modals are clear, not aggressive.
